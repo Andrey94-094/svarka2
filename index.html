@@ -1,0 +1,2332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#121218">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="./public/style/css.css">
+    <link rel="icon" type="image/ico" href="./public/assets/img/favicon.ico">
+    <title>Сварочкики Shtenli</title>
+</head>
+
+<body>
+
+    <section class="section-header" id="section-header">
+        <div class="container-fluid d-md-block d-none">
+            <div class="row align-items-center py-lg-0 py-2">
+                <div class="col-3 bg_yellow d-lg-block d-none text-center">
+                    <div class="header-logo d-flex justify-content-center align-items-center">
+                        <img src="./public/assets/img/icons/logo.png">
+                        <div class="font-weight-bold d-xl-block d-none">Лидер рынка Беларуси 2021 года</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-7 d-flex flex-wrap justify-content-around align-items-center">
+                    <a class="smoothscroll mx-2 text-white" href="#section-mine">О нас</a>
+                    <a class="smoothscroll mx-2 text-white" href="#section-catalog">Каталог</a>
+                    <a class="smoothscroll mx-2 text-white" href="#section-delivery">Доставка и оплата</a>
+                    <a class="smoothscroll mx-2 text-white" href="#section-reviews">Отзывы</a>
+                    <a class="smoothscroll mx-2 text-white" href="#section-promotions">Видео и фото</a>
+                    <a class="smoothscroll mx-2 text-white" href="#section-contact">Контакты</a>
+                </div>
+                <div class="col-lg-5 col-md-7 col-4 d-flex align-items-center justify-content-around">
+                    <div class="mx-3 d-xl-inline-flex d-none justify-content-around align-items-center">
+                        <svg class="mr-3 svg_yellow" viewBox="0 0 320.8 320.8">
+                            <path d="M207.2 113.6c-4.4-4.4-11.6-4.4-16 0l-21.3 21.3c-2.9-1.1-6.1-1.7-9.4-1.7-3.3 0-6.5.6-9.4 1.7l-43.8-43.8c-4.4-4.4-11.6-4.4-16 0s-4.4 11.6 0 16l43.8 43.8c-1.1 2.9-1.7 6.1-1.7 9.4 0 15 12.2 27.2 27.2 27.2s27.2-12.2 27.2-27.2c0-3.3-.6-6.5-1.7-9.4l21.3-21.3c4.2-4.3 4.2-11.5-.2-16zm-46.8 53.6a6.7 6.7 0 1 1 6.7-6.7c.1 3.6-3 6.7-6.7 6.7z"></path>
+                            <path d="M160.4 0C72 0 0 72 0 160.4s72 160.4 160.4 160.4 160.4-72 160.4-160.4S248.9 0 160.4 0zm106.7 251l-7.7-7.7c-4.4-4.4-11.6-4.4-16 0s-4.4 11.6 0 16l7.7 7.7c-21.7 18.5-49.2 30.5-79.2 32.9V289c0-6.3-5.1-11.3-11.3-11.3s-11.3 5.1-11.3 11.3v11c-30.1-2.4-57.5-14.4-79.2-32.9l7.7-7.7c4.4-4.4 4.4-11.6 0-16s-11.6-4.4-16 0l-7.7 7.7c-18.5-21.7-30.5-49.2-32.9-79.2h10.9c6.3 0 11.3-5.1 11.3-11.3s-5.1-11.3-11.3-11.3H20.9c2.4-30.1 14.4-57.5 32.9-79.2l7.7 7.7c2.2 2.2 5.1 3.3 8 3.3s5.8-1.1 8-3.3c4.4-4.4 4.4-11.6 0-16l-7.7-7.7C91.5 35.6 119 23.6 149 21.2v10.9c0 6.3 5.1 11.3 11.3 11.3 6.3 0 11.3-5.1 11.3-11.3V20.9c30.1 2.4 57.5 14.4 79.2 32.9l-7.7 7.7c-4.4 4.4-4.4 11.6 0 16 2.2 2.2 5.1 3.3 8 3.3s5.8-1.1 8-3.3l7.7-7.7c18.5 21.7 30.5 49.2 32.9 79.2H289c-6.3 0-11.3 5.1-11.3 11.3s5.1 11.3 11.3 11.3h11c-2.5 30.3-14.5 57.7-32.9 79.4z"></path>
+                        </svg>
+                        <div class="text-white">
+                            <div class="font-weight-bold">с 08:00 до 23:00</div>
+                            <div class="">Ежедневно</div>
+                        </div>
+                    </div>
+                    <div class="mx-3 d-md-inline-flex  justify-content-around align-items-center">
+                        <svg class="mr-3 svg_yellow" viewBox="0 0 39.04 39.05">
+                            <path d="M24.26 29.53h.85a4.58 4.58 0 0 0 1.76-.35 4.51 4.51 0 0 0 1.48-1l.76-.76a2.11 2.11 0 0 0 .47-.7 2.29 2.29 0 0 0 0-1.7 2.2 2.2 0 0 0-.48-.71l-2.39-2.39a2.29 2.29 0 0 0-3.12 0l-.22.22a3.38 3.38 0 0 1-4.76 0l-1.7-1.74a3.37 3.37 0 0 1 0-4.75l.22-.22a2.2 2.2 0 0 0 0-3.12l-2.39-2.39a2.29 2.29 0 0 0-3.12 0l-.76.76a4.53 4.53 0 0 0-1.35 3.24v.85a14.77 14.77 0 0 0 14.75 14.76"></path>
+                            <path d="M11.34 34.85l.29.15A17.55 17.55 0 1 0 2.1 19.39a17.25 17.25 0 0 0 1.94 8l.15.29-1.82 9zM0 39.05L2.25 28a19.22 19.22 0 0 1-2-8.59 19.39 19.39 0 1 1 19.4 19.38 19.14 19.14 0 0 1-8.58-2z"></path>
+                        </svg>
+                        <div class="text-white ">
+                            <a class="text-size-3 text-white d-block" href="tel:+375296228600">
+                                <div class="font-weight-bold">+375 295330486</div>
+                            </a>
+                            <a class="text-size-3 text-white d-block" href="tel:+37544">
+                                <div class="font-weight-bold">+375 445330486 </div>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#modal-order" data-toggle="modal" class="btn btn-warning">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+        <div class="container d-md-none">
+
+            <div class="row align-items-center text-center">
+
+                <div class="d-block d-sm-none d-lg-block col-6 text-white ">
+                    <a class="text-size-3 text-white d-block" href="tel:+375296228600">
+                        <div class="font-weight-bold">+375 295330486</div>
+                    </a>
+                    <a class="text-size-3 text-white d-block" href="tel:+37544">
+                        <div class="font-weight-bold">+375 445330486 </div>
+                    </a>
+                </div>
+                <div class="col-3-sm col">
+                    <a href="#modal-order" data-toggle="modal" class="my-2 btn text-size-7 btn-warning w-auto transition--slide">Заказать звонок</a>
+                </div>
+                <div class="col-2 d-none d-sm-block d-md-block d-lg-none">
+                    <a class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false">
+                        <span class="navbar-toggler_item"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="collapse" id="navbarToggle">
+            <div class="text-center text-white h-100">
+                <div class="d-flex text-size-6 flex-column justify-content-around align-items-center">
+                    <a class="smoothscroll py-2 text-white" href="#section-mine">О нас</a>
+                    <a class="smoothscroll py-2 text-white" href="#section-catalog">Меню</a>
+                    <a class="smoothscroll py-2 text-white" href="#section-delivery">Доставка и оплата</a>
+                    <a class="smoothscroll py-2 text-white" href="#section-reviews">Отзывы</a>
+                    <a class="smoothscroll py-2 text-white" href="#section-promotions">Акции и события</a>
+                    <a class="smoothscroll py-2 text-white" href="#section-contact">Контакты</a>
+                </div>
+                <div class="m-3 d-flex justify-content-center align-items-center">
+                    <svg class="mr-3 svg_yellow" viewBox="0 0 320.8 320.8">
+                        <path d="M207.2 113.6c-4.4-4.4-11.6-4.4-16 0l-21.3 21.3c-2.9-1.1-6.1-1.7-9.4-1.7-3.3 0-6.5.6-9.4 1.7l-43.8-43.8c-4.4-4.4-11.6-4.4-16 0s-4.4 11.6 0 16l43.8 43.8c-1.1 2.9-1.7 6.1-1.7 9.4 0 15 12.2 27.2 27.2 27.2s27.2-12.2 27.2-27.2c0-3.3-.6-6.5-1.7-9.4l21.3-21.3c4.2-4.3 4.2-11.5-.2-16zm-46.8 53.6a6.7 6.7 0 1 1 6.7-6.7c.1 3.6-3 6.7-6.7 6.7z"></path>
+                        <path d="M160.4 0C72 0 0 72 0 160.4s72 160.4 160.4 160.4 160.4-72 160.4-160.4S248.9 0 160.4 0zm106.7 251l-7.7-7.7c-4.4-4.4-11.6-4.4-16 0s-4.4 11.6 0 16l7.7 7.7c-21.7 18.5-49.2 30.5-79.2 32.9V289c0-6.3-5.1-11.3-11.3-11.3s-11.3 5.1-11.3 11.3v11c-30.1-2.4-57.5-14.4-79.2-32.9l7.7-7.7c4.4-4.4 4.4-11.6 0-16s-11.6-4.4-16 0l-7.7 7.7c-18.5-21.7-30.5-49.2-32.9-79.2h10.9c6.3 0 11.3-5.1 11.3-11.3s-5.1-11.3-11.3-11.3H20.9c2.4-30.1 14.4-57.5 32.9-79.2l7.7 7.7c2.2 2.2 5.1 3.3 8 3.3s5.8-1.1 8-3.3c4.4-4.4 4.4-11.6 0-16l-7.7-7.7C91.5 35.6 119 23.6 149 21.2v10.9c0 6.3 5.1 11.3 11.3 11.3 6.3 0 11.3-5.1 11.3-11.3V20.9c30.1 2.4 57.5 14.4 79.2 32.9l-7.7 7.7c-4.4 4.4-4.4 11.6 0 16 2.2 2.2 5.1 3.3 8 3.3s5.8-1.1 8-3.3l7.7-7.7c18.5 21.7 30.5 49.2 32.9 79.2H289c-6.3 0-11.3 5.1-11.3 11.3s5.1 11.3 11.3 11.3h11c-2.5 30.3-14.5 57.7-32.9 79.4z"></path>
+                    </svg>
+                    <div class="text-white text-size-5">
+                        <div class="font-weight-bold">с 08:00 до 23:00</div>
+                        <div class="">Ежедневно</div>
+                    </div>
+                </div>
+                <div class="m-3 d-flex justify-content-center align-items-center">
+                    <svg class="mr-3 svg_yellow" viewBox="0 0 39.04 39.05">
+                        <path d="M24.26 29.53h.85a4.58 4.58 0 0 0 1.76-.35 4.51 4.51 0 0 0 1.48-1l.76-.76a2.11 2.11 0 0 0 .47-.7 2.29 2.29 0 0 0 0-1.7 2.2 2.2 0 0 0-.48-.71l-2.39-2.39a2.29 2.29 0 0 0-3.12 0l-.22.22a3.38 3.38 0 0 1-4.76 0l-1.7-1.74a3.37 3.37 0 0 1 0-4.75l.22-.22a2.2 2.2 0 0 0 0-3.12l-2.39-2.39a2.29 2.29 0 0 0-3.12 0l-.76.76a4.53 4.53 0 0 0-1.35 3.24v.85a14.77 14.77 0 0 0 14.75 14.76"></path>
+                        <path d="M11.34 34.85l.29.15A17.55 17.55 0 1 0 2.1 19.39a17.25 17.25 0 0 0 1.94 8l.15.29-1.82 9zM0 39.05L2.25 28a19.22 19.22 0 0 1-2-8.59 19.39 19.39 0 1 1 19.4 19.38 19.14 19.14 0 0 1-8.58-2z"></path>
+                    </svg>
+                    <div class="text-white text-size-5">
+                        <div class="font-weight-bold">+375 29 5330486</div>
+                        <div class="font-weight-bold">+375 44 5330486</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-mine" id="section-mine">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="slider-mine__img text-center">
+                        <div>
+                            <img src="./public/assets/img/main_slider/privyu1_-724x1024.jpg" class="w-100 h-auto img-fluid">
+                        </div>
+                        <div>
+                            <img src="./public/assets/img/main_slider/privyu2_-711x1024.jpg" class="w-100 h-auto img-fluid">
+                        </div>
+                        <div>
+                            <img src="./public/assets/img/main_slider/privyu_3-711x1024.jpg" class="w-100 h-auto img-fluid">
+                        </div>
+                    </div>
+                    <div class="slider-mine__arrow">
+                        <div class="slider-mine__prev"><i class="fa fa-lg fa-angle-double-left" aria-hidden="true"></i></div>
+                        <div class="slider-mine__next"><i class="fa fa-lg fa-angle-double-right" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-white">
+                    <div class="m-5 text_yellow text-size-7 font-weight-bold">Сварочные аппараты SHTENLI немецкое качество без переплат </div>
+                    <div class="slider-mine__text">
+                        <div class="px-5">
+                            <div class="font-weight-bold section_title">
+                                <div>Маска хамелеон в Подарок</div>
+                                <div>к любому аппарату</div>
+                            </div>
+                            <div class="h5 font-weight-light mt-4">
+                                <div>Скидки постоянным клиентам.</div>
+                                <div>Бонусная программа</div>
+                            </div>
+                            <a href="#section-catalog" class="smoothscroll link text-white">Узнать больше</a>
+                        </div>
+                        <div class="px-5">
+                            <div class="font-weight-bold section_title">
+                                <div>Гарантия 2 года!</div>
+                                <div>Бесплатная доставка по РБ.</div>
+                            </div>
+                            <div class="h5 font-weight-light mt-4">
+                                <div>Защита от короткого замыкания.</div>
+                                <div>Защита отперегрева</div>
+                            </div>
+                            <a href="http://tut.od.ua/#menu" class="link text-white">Узнать больше</a>
+                        </div>
+                        <div class="px-5">
+                            <div class="font-weight-bold section_title">
+                                <div>Официальный диллер в РБ</div>
+                                <div>Более 10 лет на рынке</div>
+                            </div>
+                            <div class="h5 font-weight-light mt-4">
+                                <div>Сотни довольных клиентов.</div>
+                                <div>Бесплатное сервисное обслуживание</div>
+                            </div>
+                            <a href="http://tut.od.ua/#menu" class="link text-white">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="mx-5 text-size-7 font-weight-bold">Черная Пятница! Скидки до 50%</div>
+                    <div class="mx-5 text-size-6 font-weight-light">АКЦИЯ <i class="fa fa-lg text_yellow mx-2 fa-map-marker" aria-hidden="true"></i> БЕСПЛАТНАЯ ДОСТАВКА <a class="text_yellow font-weight-bold" href="#">по Беларуси</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-catalog bg_dark py-5" id="section-catalog">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-xl-10 col-12">
+                    <div class="row justify-content-center" id="MMA">
+
+                        <div class="col-lg-6 my-3">
+                            <form class="bg_dark shadow text-white catalog-cart">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="MMA 200">
+                                <div class="single-catalog">
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma2001.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma2002.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma2003.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma2004.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                </div>
+                                <div class="row px-3 text-center">
+                                    <div class="col-12 py-3">
+                                        <div class="h3 font-weight-bold">Shtenli MMA 200</div>
+                                        <table class="table border-dark table-sm table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Напряжение:</th>
+                                                    <td>220 B±15%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Частота:</th>
+                                                    <td>50/60 Гц</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Номинальный входной ток:</th>
+                                                    <td>24 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Диапазон регулировки:</th>
+                                                    <td>20-220 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Гарантия:</th>
+                                                    <td>24 месяца</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <div class="h3">Цена по акции: <span class="text-red h2">159 руб.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <div class="catalog-form__phone">
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4">Заказать консультацию <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <a href="#modal-product1" data-toggle="modal" class="border-radius-15 modal-product px-sm-5 px-3 btn btn-warning text-uppercase">Подробнее</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-6 my-3">
+                            <form class="bg_dark shadow text-white catalog-cart">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="MMA 250 Pro">
+                                <div class="single-catalog">
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma2501.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma2502.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma2503.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma2504.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                </div>
+                                <div class="row px-3 text-center">
+                                    <div class="col-12 py-3">
+                                        <div class="h3 font-weight-bold">Shtenli MMA 250 Pro</div>
+                                        <table class="table border-dark table-sm table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Напряжение:</th>
+                                                    <td>220 B±15%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Частота:</th>
+                                                    <td>50/60 Гц</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Номинальный входной ток:</th>
+                                                    <td>24 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Диапазон регулировки:</th>
+                                                    <td>20-250 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Гарантия</th>
+                                                    <td>24 месяца</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <div class="h3">Цена на акции: <span class="text-red h2">229 руб.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <div class="catalog-form__phone">
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4">Заказать консультацию <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <a href="#modal-product2" data-toggle="modal" class="border-radius-15 modal-product px-sm-5 px-3 btn btn-warning text-uppercase">Подробнее</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-6 my-3">
+                            <form class="bg_dark shadow text-white catalog-cart">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="MMA 270 Pro">
+                                <div class="single-catalog">
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma2701.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma2702.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma2703.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma2704.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                </div>
+                                <div class="row px-3 text-center">
+                                    <div class="col-12 py-3">
+                                        <div class="h3 font-weight-bold">Shtenli MMA 270 Pro</div>
+                                        <table class="table border-dark table-sm table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Напряжение:</th>
+                                                    <td>220 B±15%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Частота:</th>
+                                                    <td>50/60 Гц</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Номинальный входной ток:</th>
+                                                    <td>24 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Диапазон регулировки:</th>
+                                                    <td>20-270 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Гарантия:</th>
+                                                    <td>24 месяца</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <div class="h3">Цена на акции: <span class="text-red h2">264 руб.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <div class="catalog-form__phone">
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4">Заказать консультацию <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <a href="#modal-product3" data-toggle="modal" class="border-radius-15 modal-product px-sm-5 px-3 btn btn-warning text-uppercase">Подробнее</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-6 my-3">
+                            <form class="bg_dark shadow text-white catalog-cart">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="MMA 304/314">
+                                <div class="single-catalog">
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma3041.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma3042.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma3043.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mma3044.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                </div>
+                                <div class="row px-3 text-center">
+                                    <div class="col-12 py-3">
+                                        <div class="h3 font-weight-bold">Shtenli MMA 320</div>
+                                        <table class="table border-dark table-sm table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Напряжение:</th>
+                                                    <td>220 B±15%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Частота:</th>
+                                                    <td>50/60 Гц</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Номинальный входной ток:</th>
+                                                    <td>24 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Диапазон регулировки:</th>
+                                                    <td>20-315 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Гарантия:</th>
+                                                    <td>24 месяца</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <div class="h3">Цена на акции: <span class="text-red h2">304 руб.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <div class="catalog-form__phone">
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4">Заказать консультацию <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <a href="#modal-product4" data-toggle="modal" class="border-radius-15 modal-product px-sm-5 px-3 btn btn-warning text-uppercase">Подробнее</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <hr class="border-light">
+
+                    <div class="row justify-content-center" id="MIG">
+
+                        <div class="col-lg-6 my-3">
+                            <form class="bg_dark shadow text-white catalog-cart">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="MIG 220 Pro">
+                                <div class="single-catalog">
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig2201.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig2202.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig2203.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig2204.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                </div>
+                                <div class="row px-3 text-center">
+                                    <div class="col-12 py-3">
+                                        <div class="h3 font-weight-bold">Shtenli MIG 220 Pro без евро разъема</div>
+                                        <table class="table border-dark table-sm table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Напряжение:</th>
+                                                    <td>220 B±15%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Частота:</th>
+                                                    <td>50/60 Гц</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Номинальный входной ток:</th>
+                                                    <td>21,7 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Диапазон регулировки:</th>
+                                                    <td>40-220 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Гарантия:</th>
+                                                    <td>24 месяца</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <div class="h3">Цена на акции: <span class="text-red h2">452 руб.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <div class="catalog-form__phone">
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4">Заказать консультацию <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <a href="#modal-product5" data-toggle="modal" class="border-radius-15 modal-product px-sm-5 px-3 btn btn-warning text-uppercase">Подробнее</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-6 my-3">
+                            <form class="bg_dark shadow text-white catalog-cart">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="MIG 220 Pro S">
+                                <div class="single-catalog">
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig220c1.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig220c2.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig220c3.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig220c4.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                </div>
+                                <div class="row px-3 text-center">
+                                    <div class="col-12 py-3">
+                                        <div class="h3 font-weight-bold">Shtenli MIG 220 Pro S с евро разъемом</div>
+                                        <table class="table border-dark table-sm table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Напряжение:</th>
+                                                    <td>220 В±15%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Частота:</th>
+                                                    <td>50/60 Гц</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Номинальный входной ток:</th>
+                                                    <td>21,7 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Диапазон регулировки:</th>
+                                                    <td>40-220 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Гарантия:</th>
+                                                    <td>24 месяца</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <div class="h3">Цена на акции: <span class="text-red h2">529 руб.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <div class="catalog-form__phone">
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4">Заказать консультацию <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <a href="#modal-product6" data-toggle="modal" class="border-radius-15 modal-product px-sm-5 px-3 btn btn-warning text-uppercase">Подробнее</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-6 my-3">
+                            <form class="bg_dark shadow text-white catalog-cart">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="MIG 250 Pro">
+                                <div class="single-catalog">
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig2501.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig2502.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig2503.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig2504.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                </div>
+                                <div class="row px-3 text-center">
+                                    <div class="col-12 py-3">
+                                        <div class="h3 font-weight-bold">Shtenli MIG 250 Pro без евро разъема</div>
+                                        <table class="table border-dark table-sm table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Напряжение:</th>
+                                                    <td>220 B±15%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Частота:</th>
+                                                    <td>50/60 Гц</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Номинальный входной ток:</th>
+                                                    <td>21,7 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Диапазон регулировки:</th>
+                                                    <td>40-250 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Гарантия:</th>
+                                                    <td>24 месяца</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <div class="h3">Цена на акции: <span class="text-red h2">486 руб.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <div class="catalog-form__phone">
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4">Заказать консультацию <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <a href="#modal-product7" data-toggle="modal" class="border-radius-15 modal-product px-sm-5 px-3 btn btn-warning text-uppercase">Подробнее</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-6 my-3">
+                            <form class="bg_dark shadow text-white catalog-cart">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="MIG 250 Pro S">
+                                <div class="single-catalog">
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig250c1.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig250c2.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig250c3.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/mig250c4.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                </div>
+                                <div class="row px-3 text-center">
+                                    <div class="col-12 py-3">
+                                        <div class="h3 font-weight-bold">Shtenli MIG 250 Pro S с евро разъемом</div>
+                                        <table class="table border-dark table-sm table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Напряжение:</th>
+                                                    <td>220 B±15%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Частота:</th>
+                                                    <td>50/60 Гц</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Номинальный входной ток:</th>
+                                                    <td>21,7 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Диапазон регулировки:</th>
+                                                    <td>40-250 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Гарантия:</th>
+                                                    <td>24 месяца</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <div class="h3">Цена на акции: <span class="text-red h2">542 руб.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <div class="catalog-form__phone">
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4">Заказать консультацию <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <a href="#modal-product8" data-toggle="modal" class="border-radius-15 modal-product px-sm-5 px-3 btn btn-warning text-uppercase">Подробнее</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <hr class="border-light">
+
+                    <div class="row justify-content-center" id="MIG-MMA">
+
+                        <div class="col-md-6 my-3">
+                            <form class="bg_dark shadow text-white catalog-cart">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="MIG/MMA 220 Pro">
+                                <div class="single-catalog">
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma2201.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma2202.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma2203.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma2204.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                </div>
+                                <div class="row px-3 text-center">
+                                    <div class="col-12 py-3">
+                                        <div class="h3 font-weight-bold">Shtenli MIG/MMA 220 Pro без евро разъема</div>
+                                        <table class="table border-dark table-sm table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Напряжение:</th>
+                                                    <td>220 B±15%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Частота:</th>
+                                                    <td>50/60 Гц</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Номинальный входной ток:</th>
+                                                    <td>21,7 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Диапазон регулировки:</th>
+                                                    <td>40-220 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Гарантия:</th>
+                                                    <td>24 месяца</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <div class="h3">Цена на акции: <span class="text-red h2">466 руб.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <div class="catalog-form__phone">
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4">Заказать консультацию <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <a href="#modal-product9" data-toggle="modal" class="border-radius-15 modal-product px-sm-5 px-3 btn btn-warning text-uppercase">Подробнее</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-md-6 my-3">
+                            <form class="bg_dark shadow text-white catalog-cart">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="MIG/MMA 220 Pro S">
+                                <div class="single-catalog">
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma220c1.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma220c2.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma220c3.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma220c4.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                </div>
+                                <div class="row px-3 text-center">
+                                    <div class="col-12 py-3">
+                                        <div class="h3 font-weight-bold">Shtenli MIG/MMA 220 Pro S с евро разъемом</div>
+                                        <table class="table border-dark table-sm table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Напряжение:</th>
+                                                    <td>220 B±15%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Частота:</th>
+                                                    <td>50/60 Гц</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Номинальный входной ток:</th>
+                                                    <td>21,7 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Диапазон регулировки:</th>
+                                                    <td>40-220 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Гарантия:</th>
+                                                    <td>24 месяца</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <div class="h3">Цена на акции: <span class="text-red h2">585 руб.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <div class="catalog-form__phone">
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4">Заказать консультацию <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <a href="#modal-product10" data-toggle="modal" class="border-radius-15 modal-product px-sm-5 px-3 btn btn-warning text-uppercase">Подробнее</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-md-6 my-3">
+                            <form class="bg_dark shadow text-white catalog-cart">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="MIG/MMA 250 Pro">
+                                <div class="single-catalog">
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma2201.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma2202.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma2203.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma2204.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                </div>
+                                <div class="row px-3 text-center">
+                                    <div class="col-12 py-3">
+                                        <div class="h3 font-weight-bold">Shtenli MIG/MMA 250 Pro без евро разъема</div>
+                                        <table class="table border-dark table-sm table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Напряжение:</th>
+                                                    <td>220 B±15%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Частота:</th>
+                                                    <td>50/60 Гц</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Номинальный входной ток:</th>
+                                                    <td>21,7 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Диапазон регулировки:</th>
+                                                    <td>40-250 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Гарантия:</th>
+                                                    <td>24 месяца</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <div class="h3">Цена на акции: <span class="text-red h2">481 руб.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <div class="catalog-form__phone">
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4">Заказать консультацию <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <a href="#modal-product11" data-toggle="modal" class="border-radius-15 modal-product px-sm-5 px-3 btn btn-warning text-uppercase">Подробнее</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-md-6 my-3">
+                            <form class="bg_dark shadow text-white catalog-cart">
+                                <input type="hidden" name="form" value="Карточка товара">
+                                <input type="hidden" name="product" value="MIG/MMA 250 Pro S">
+                                <div class="single-catalog">
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma220c1.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma220c2.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma220c3.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                    <div>
+                                        <img src="./public/assets/img/catalog/migmma220c4.jpg" class="w-100 h-auto img-fluid">
+                                    </div>
+                                </div>
+                                <div class="row px-3 text-center">
+                                    <div class="col-12 py-3">
+                                        <div class="h3 font-weight-bold">Shtenli MIG/MMA 250 Pro S с евро разъемом</div>
+                                        <table class="table border-dark table-sm table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Напряжение:</th>
+                                                    <td>220 B±15%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Частота:</th>
+                                                    <td>50/60 Гц</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Номинальный входной ток:</th>
+                                                    <td>21,7 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Диапазон регулировки:</th>
+                                                    <td>40-250 A</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Гарантия:</th>
+                                                    <td>24 месяца</td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                        <div>
+                                            <div class="h3">Цена на акции: <span class="text-red h2">613 руб.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <div class="catalog-form__phone">
+                                                <input name="phone" type="tel" required="">
+                                            </div>
+                                            <button type="submit" class="btn px-4">Заказать консультацию <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 py-3">
+                                        <a href="#modal-product12" data-toggle="modal" class="border-radius-15 modal-product px-sm-5 px-3 btn btn-warning text-uppercase">Подробнее</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-delivery bg_dark py-5 text-white" id="section-delivery">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-10 offset-md-2 my-3">
+                    <div class="section_title text-white font-weight-bold my-3">Доставка и оплата</div>
+                    <div class="text-size-6 text-white my-3">Бесплатно доставляем в удобное для вас время. Оплата по факту получения товара.</div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <svg class="w-25 mb-3 svg_yellow" viewBox="0 0 44.51 44.5">
+                        <g fill-rule="evenodd">
+                            <path d="M39.61 8.33a.66.66 0 1 0-1 .82 20.7 20.7 0 0 1 4.6 13.09 20.94 20.94 0 0 1-39.7 9.29.66.66 0 1 0-1.18.59A22.25 22.25 0 1 0 39.61 8.33zM2.5 29.19A20.94 20.94 0 0 1 36.87 7.27a.66.66 0 1 0 .92-.94 22.25 22.25 0 0 0-36.53 23.3.66.66 0 1 0 1.24-.44z"></path>
+                            <path d="M24.26 3.88a18.47 18.47 0 1 0 2.68.5.66.66 0 1 0-.33 1.27 17.16 17.16 0 1 1-2.49-.46.66.66 0 1 0 .14-1.31z"></path>
+                            <path d="M21.64 10.67V8.08a.61.61 0 0 1 1.23 0v2.59a.61.61 0 1 1-1.23 0m2.55 0V8.08a1.93 1.93 0 1 0-3.86 0v2.59a1.93 1.93 0 1 0 3.86 0zM22.87 34.06v2.59a.61.61 0 1 1-1.23 0v-2.59a.61.61 0 1 1 1.23 0m-2.55 0v2.59a1.93 1.93 0 1 0 3.86 0v-2.59a1.93 1.93 0 1 0-3.86 0zM26.48 20.69c-4.23 2-4 2-4.23 2a.44.44 0 0 1-.38-.21l-4.38-7.38a.44.44 0 1 1 .75-.45l3.87 6.52a.66.66 0 0 0 .85.26c3.27-1.57 3.13-1.56 3.32-1.56a.44.44 0 0 1 .2.82zm-1-2L22.94 20l-3.56-6a1.76 1.76 0 1 0-3 1.79l4 6.82L13 27a.66.66 0 0 0 .34 1.22c.35 0 0 .06 7.8-4.58a1.76 1.76 0 0 0 1.06.36c.7 0 .75-.23 4.8-2.13a1.76 1.76 0 1 0-1.53-3.16zM16.26 11.87a.66.66 0 0 0 .24-.9l-1.06-1.84a.66.66 0 1 0-1.14.66l1.06 1.84a.66.66 0 0 0 .9.24M11.31 16.59a.66.66 0 0 0 .33-1.23L9.79 14.3a.66.66 0 1 0-.66 1.14c1.86 1 1.86 1.15 2.17 1.15M11 28l-1.87 1.06a.66.66 0 0 0 .33 1.23c.31 0 .31-.11 2.17-1.15A.66.66 0 0 0 11 28M15.36 32.87l-1.06 1.84a.66.66 0 1 0 1.14.66l1.06-1.84a.66.66 0 0 0-1.14-.66M29.14 32.87a.66.66 0 0 0-1.14.66l1.06 1.84a.66.66 0 1 0 1.14-.66zM33.53 28a.66.66 0 1 0-.66 1.14c1.86 1 1.86 1.15 2.17 1.15a.66.66 0 0 0 .33-1.23zM33.53 16.5l1.84-1.06a.66.66 0 1 0-.66-1.14l-1.84 1.06a.66.66 0 0 0 .66 1.14M30 8.89a.66.66 0 0 0-.9.24L28 11a.66.66 0 0 0 1.14.66l1.06-1.84a.66.66 0 0 0-.2-.93zM34 21.75h2.59a.61.61 0 1 1 0 1.23H34a.61.61 0 1 1 0-1.23m0 2.55h2.59a1.93 1.93 0 1 0 0-3.86H34a1.93 1.93 0 1 0 0 3.86zM10.56 23H8a.61.61 0 0 1 0-1.23h2.59a.61.61 0 1 1 0 1.23m0-2.54H8a1.93 1.93 0 1 0 0 3.84h2.59a1.93 1.93 0 1 0 0-3.86z"></path>
+                        </g>
+                    </svg>
+                    <div class="line-height-1 mb-3 text_yellow font-weight-bold text-size-6">Оформление<br> заказа</div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <svg class="w-25 mb-3 svg_yellow" viewBox="0 0 39.24 27.04">
+                        <path d="M34.54 25.77A3.43 3.43 0 1 1 38 22.33a3.44 3.44 0 0 1-3.43 3.43m-6.82-6.34v-7.1a.72.72 0 0 1 .4-.64l.31-.15L30.67 16a7.44 7.44 0 0 0-2.95 3.43zm2.04-11.37h.72v1.44h-.72a.72.72 0 0 1 0-1.44zm-2.52 12.8a7.34 7.34 0 0 0-.12.85H15.47a4.67 4.67 0 0 0-.18-.78h.1a2.09 2.09 0 0 0 2-2.23 6.45 6.45 0 0 0-1.26-3.82 5.33 5.33 0 0 0-.64-.71h2.1v2.75A3.35 3.35 0 0 0 21 20.26h6.1a.63.63 0 0 0 .38-.12 7.22 7.22 0 0 0-.21.71zm-16.46 4.92a3.43 3.43 0 0 1-3.13-4.84H9.4a2 2 0 1 0 2.81 0h1.72a3.43 3.43 0 0 1-3.13 4.85zm.72-3.43a.72.72 0 1 1-.72-.72.72.72 0 0 1 .72.71zM6 19.66a.47.47 0 0 1-.38-.18.5.5 0 0 1-.09-.43 7 7 0 0 1 6.65-4.9c2.91 0 4 2.78 4 4.53 0 .48-.26 1-.76 1zm-1.65-6.78a.39.39 0 0 1-.09-.76h7.26a2 2 0 0 0 .14.72zm-3-2V4h9.58v6.82zm0-9.54h9.49v1.4H1.27zm12.17 10.1h5.42a.72.72 0 1 1 0 1.44h-5.42a.72.72 0 1 1 0-1.44zm21 6.19a4.69 4.69 0 0 0-1.52.25l-.65-1.3a6.13 6.13 0 0 1 4.65.12.64.64 0 1 0 .51-1.17 7.4 7.4 0 0 0-5.7-.09l-2.36-4.71a2.07 2.07 0 0 0 .34 0h1.36a.64.64 0 0 0 .64-.64V7.42a.64.64 0 0 0-.64-.64h-1.36A2 2 0 0 0 28 7.87l-.67-1.34a2 2 0 0 0-1.78-1.1h-1.2a.64.64 0 0 0 0 1.27h1.2a.72.72 0 0 1 .64.4l1.65 3.29-.31.15a2 2 0 0 0-1.1 1.78V19H21a2.08 2.08 0 0 1-2.08-2.08v-2.77a2 2 0 1 0 0-4h-5.4a2 2 0 0 0-1.4.57V1.31A1.32 1.32 0 0 0 10.81 0h-9.5A1.31 1.31 0 0 0 0 1.31v9.49a1.31 1.31 0 0 0 1.31 1.31h1.43a1.69 1.69 0 0 0 0 .4 1.67 1.67 0 0 0 1.66 1.63h3.37a8.6 8.6 0 0 0-1.1.84 7.88 7.88 0 0 0-2.4 3.76 1.76 1.76 0 0 0 .33 1.51 1.74 1.74 0 0 0 1.4.68h.34a4.7 4.7 0 1 0 9.15 2h12.27a.64.64 0 0 0 .64-.64 6.22 6.22 0 0 1 .12-1.23 6.14 6.14 0 0 1 2.72-3.95l.65 1.3a4.7 4.7 0 1 0 2.65-.82z" fill-rule="evenodd"></path>
+                    </svg>
+                    <div class="line-height-1 mb-3 text_yellow font-weight-bold text-size-6">Бесплатная <br> доставка</div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <svg class="w-25 mb-3 svg_yellow" viewBox="0 0 35.96 43.79">
+                        <g fill-rule="evenodd">
+                            <path d="M28.52 38.77a16.69 16.69 0 1 1 2.41-23.49 16.71 16.71 0 0 1-2.41 23.49M18.78 5.7v2.16H17.2V5.7zm-4.23-1.28a1.57 1.57 0 0 1 0-3.13h6.87a1.57 1.57 0 0 1 0 3.13zm17.39 10.05A17.92 17.92 0 0 0 20.06 8V5.7h1.36a2.85 2.85 0 0 0 0-5.7h-6.87a2.85 2.85 0 1 0 0 5.7h1.36V8a18 18 0 1 0 16 6.51z"></path>
+                            <path d="M20.46 39A13.32 13.32 0 0 1 10 36.57a13.5 13.5 0 0 1-5.39-10.81.64.64 0 1 0-1.29 0A14.67 14.67 0 0 0 20.7 40.23a.64.64 0 0 0-.24-1.23zM4.21 23.85a.64.64 0 0 0 .63-.52 13.39 13.39 0 0 1 23-6.56.64.64 0 1 0 .95-.87 14.68 14.68 0 0 0-25.22 7.18.64.64 0 0 0 .64.77zM30.42 18a.64.64 0 0 0-1.09.68 13.39 13.39 0 0 1-6.51 19.62.64.64 0 0 0 .46 1.2A14.68 14.68 0 0 0 30.42 18zM19.09 26.64a1.37 1.37 0 1 1-1.09-2.2 1.37 1.37 0 0 1 1.09 2.2zm1 .77a2.66 2.66 0 1 0-4.27-3.17 2.63 2.63 0 0 0-.42 2.31l-3.69 2.36a.64.64 0 0 0 .35 1.18c.34 0 .18 0 4-2.43a2.66 2.66 0 0 0 4.06-.26z"></path>
+                            <path d="M18.63 16.41V14a.64.64 0 1 0-1.29 0v2.39a.64.64 0 0 0 1.29 0M13.28 18.32a.64.64 0 0 0 .32-.09.64.64 0 0 0 .24-.88l-1.2-2.07a.64.64 0 0 0-1.11.64l1.2 2.08a.64.64 0 0 0 .55.32zM10.16 20.56l-2.07-1.2a.64.64 0 0 0-.64 1.11l2.07 1.2a.64.64 0 0 0 .64-1.11zM9.22 25.82a.64.64 0 0 0-.64-.64H6.19a.64.64 0 0 0 0 1.29h2.39a.64.64 0 0 0 .64-.65zM7.77 32.36c.3 0 .28-.1 2.39-1.28A.64.64 0 0 0 9.52 30l-2.07 1.2a.64.64 0 0 0 .32 1.16zM12.73 33.64l-1.2 2.07a.64.64 0 1 0 1.11.64l1.2-2.07a.64.64 0 0 0-1.11-.64zM17.34 35.23v2.39a.64.64 0 0 0 1.29 0v-2.39a.64.64 0 1 0-1.29 0M24.21 36.59a.64.64 0 0 0 .24-.88l-1.2-2.07a.64.64 0 0 0-1.11.64l1.2 2.07a.64.64 0 0 0 .88.24M25.81 31.08c2.11 1.19 2.09 1.28 2.39 1.28a.64.64 0 0 0 .32-1.2L26.45 30a.64.64 0 1 0-.64 1.11zM30.43 25.82a.64.64 0 0 0-.64-.64h-2.4a.64.64 0 1 0 0 1.29h2.39a.64.64 0 0 0 .65-.65zM26.13 21.76a.64.64 0 0 0 .32-.09l2.07-1.2a.64.64 0 1 0-.64-1.11l-2.07 1.2a.64.64 0 0 0 .32 1.2zM23.33 15.28l-1.2 2.07a.64.64 0 0 0 1.11.64l1.2-2.07a.64.64 0 0 0-1.11-.64z"></path>
+                        </g>
+                    </svg>
+                    <div class="line-height-1 mb-3 text_yellow font-weight-bold text-size-6">Звонок водителя <br> за 1 час до прибытия</div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <svg class="w-25 mb-3 svg_yellow" viewBox="0 0 30.82 44.03">
+                        <g>
+                            <path d="M18.35 0H3.67A3.67 3.67 0 0 0 0 3.67v26.42a3.67 3.67 0 0 0 3.67 3.67h13.21v-1.47H3.67a2.2 2.2 0 0 1-2.2-2.2V3.67a2.2 2.2 0 0 1 2.2-2.2h14.68a2.2 2.2 0 0 1 2.2 2.2V25H22V3.67A3.67 3.67 0 0 0 18.35 0" fill-rule="evenodd"></path>
+                            <path d="M29.06 19.55l-7.2-9-1.15.92 7.2 9a6.62 6.62 0 0 1 1.45 4.13v18H18.62a6.88 6.88 0 0 1-6.88-6.88V33h-1.47v2.66A8.35 8.35 0 0 0 18.62 44h11.47a.73.73 0 0 0 .73-.73V24.59a8.11 8.11 0 0 0-1.77-5" fill-rule="evenodd"></path>
+                            <path d="M12.47 17.31a1.92 1.92 0 0 1 1.35.6l9.86 10.48 1.07-1-9.86-10.49a3.38 3.38 0 0 0-2.37-1.06 3.33 3.33 0 0 0-2.42.92l-.07.07a3.39 3.39 0 0 0-.19 4.6l6.32 7.46v2.27a9.82 9.82 0 0 0 6.35 9.16l.49-1.38a8.35 8.35 0 0 1-5.4-7.78v-2.54a.74.74 0 0 0-.17-.48l-6.49-7.67a1.94 1.94 0 0 1 .15-2.65 2 2 0 0 1 1.38-.53" fill-rule="evenodd"></path>
+                            <path d="M16.15 1.47h1.47v18.35h-1.47zM12.48 24.22h1.47v8.81h-1.47zM12.48.73h1.47v16.15h-1.47zM3.67 3.67h1.47v9.54H3.67zM7.34 3.67h1.47v5.87H7.34z"></path>
+                            <path d="M8.07 28.62H5.14v-2.93h2.93zm.73-4.4H4.4a.73.73 0 0 0-.73.73v4.4a.73.73 0 0 0 .73.73h4.4a.73.73 0 0 0 .73-.73V25a.73.73 0 0 0-.72-.78z" fill-rule="evenodd"></path>
+                        </g>
+                    </svg>
+                    <div class="line-height-1 mb-3 text_yellow font-weight-bold text-size-6">Оплата по факту <br> получения</div>
+                </div>
+
+
+            </div>
+        </div>
+        <svg viewBox="0 0 87.64 76.51">
+            <g>
+                <path d="M69.02 20.77zM87.43 65.18a.71.71 0 0 0 .21-.5 14.64 14.64 0 0 0-9.75-13.78l-.16-.06a.37.37 0 0 1-.25-.39v-.17c.23-2.06.37-4.13.4-6.18a51.87 51.87 0 0 0-.44-8 .71.71 0 0 0-.79-.61.71.71 0 0 0-.62.79 50.45 50.45 0 0 1 .45 7.72c0 2.39-.21 4.46-.35 5.77V50a.38.38 0 0 1-.15.26.39.39 0 0 1-.29.07h-.23c-.39-.06-.79-.12-1.21-.15a14.83 14.83 0 0 0-4 .23 14.49 14.49 0 0 0-2.72.82l-.44.18a.38.38 0 0 1-.4-.07.37.37 0 0 1-.1-.39l.15-.45a43.33 43.33 0 0 0 2.07-12.3 35.4 35.4 0 0 0-.68-8 28.29 28.29 0 0 0-2.42-7l-.16-.32a.38.38 0 0 1 .33-.54h1.56l.93.19h.12a11.25 11.25 0 0 1 3.63 3.08 16.85 16.85 0 0 1 2.52 4.72.71.71 0 1 0 1.36-.5 20.79 20.79 0 0 0-1.3-2.92 16 16 0 0 0-1.62-2.43l-.4-.48a.38.38 0 0 1 0-.43.36.36 0 0 1 .39-.17l1.23.24a.71.71 0 0 0 .85-.69v-8.33a.69.69 0 0 0 0-.13.72.72 0 0 0-.25-.41.7.7 0 0 0-.59-.15l-5.66 1.13a.36.36 0 0 1-.31-.08.38.38 0 0 1-.14-.29v-7a.71.71 0 0 0-.47-.69L61.4 4.47a.37.37 0 0 1-.23-.29v-.12a4.88 4.88 0 1 0-4.81 5.7 4.83 4.83 0 0 0 2.82-.9 4.94 4.94 0 0 0 1.79-2.38l.03-.21a.38.38 0 0 1 .2-.22.37.37 0 0 1 .29 0l5 2a.37.37 0 0 1 .23.35v6.52a.38.38 0 0 1-.37.38H53.56a.71.71 0 0 0 0 1.42h8.65a.38.38 0 0 1 .38.38v4.48a.71.71 0 0 0 .7.71h.13a.38.38 0 0 1 .32.19l.06.11a28.25 28.25 0 0 1 3.61 13.91 41.29 41.29 0 0 1-3.08 16.14v.15a.63.63 0 0 1-.16.31l-.62.5-.53.48-.07.07a.36.36 0 0 1-.29.1H50.38a.38.38 0 0 1-.36-.49l.09-.29a31.29 31.29 0 0 0 1.26-5.35 18.82 18.82 0 0 0 0-5.49 12.06 12.06 0 0 0-2.12-5.27 12.45 12.45 0 0 0-4.41-3.68l-.12-.06a.37.37 0 0 1-.2-.33v-7.55a.71.71 0 0 0-.71-.71H28.52a7.67 7.67 0 0 0-7.66 7.66V33a.37.37 0 0 1-.12.28.4.4 0 0 1-.29.1h-.58a.38.38 0 0 1-.37-.38v-9a.38.38 0 0 1 .38-.37h1.7a.71.71 0 0 0 .71-.71V16a.71.71 0 0 0-.71-.71H.71A.71.71 0 0 0 0 16v7a.7.7 0 0 0 .21.5.71.71 0 0 0 .5.21h1.7a.38.38 0 0 1 .38.38v9a.38.38 0 0 1-.37.38H.71a.71.71 0 1 0 0 1.42H16.3a.38.38 0 0 1 .17.71l-.82.42q-.74.38-1.44.78c-.46.26-.91.54-1.36.84A27.18 27.18 0 0 0 1.49 52 33.52 33.52 0 0 0 0 63.27V64.37a1.32 1.32 0 0 0 0 .37.7.7 0 0 0 .26.37.71.71 0 0 0 .43.15h3.15a.38.38 0 0 1 .37.34v.2a11.83 11.83 0 0 0 23.56 0v-.2a.38.38 0 0 1 .37-.34h15.68a.72.72 0 0 0 .27-.05.73.73 0 0 0 .23-.15 8.5 8.5 0 0 0 .92-1.27c.41-.64.87-1.42 1.33-2.25l.06-.11a.38.38 0 0 1 .33-.2h11.39a.37.37 0 0 1 .37.45v.26c-.09.46-.15.92-.2 1.37s-.06.92-.06 1.38a.71.71 0 0 0 .71.71h1.74a.38.38 0 0 1 .37.34v.2a11.84 11.84 0 0 0 23.54 0v-.2a.38.38 0 0 1 .37-.34h1.74a.7.7 0 0 0 .5-.22zM68.17 16.9a.37.37 0 0 1 .3-.37l4.79-1a.37.37 0 0 1 .31.08.38.38 0 0 1 .14.29v5.7a.37.37 0 0 1-.37.38h-.07L69 21.15h-.21l-.27-.13-.13-.06a.38.38 0 0 1-.22-.34zm-9.39-9.57a3.46 3.46 0 0 1-4.92-4.87 3.55 3.55 0 0 1 4.9 0 3.46 3.46 0 0 1 0 4.9zM64 20.48v-3.39a.38.38 0 0 1 .38-.37h2a.38.38 0 0 1 .38.38v3.39a.38.38 0 0 1-.37.38h-2a.38.38 0 0 1-.39-.39zM22.28 32.69a6.25 6.25 0 0 1 6.24-6.24h14.22a.38.38 0 0 1 .38.38V33a.38.38 0 0 1-.37.38H22.66a.38.38 0 0 1-.37-.37zM1.8 22.25a.38.38 0 0 1-.37-.37v-4.79a.38.38 0 0 1 .38-.37h18.68a.38.38 0 0 1 .38.38v4.79a.38.38 0 0 1-.37.38zm2.78 11.13A.38.38 0 0 1 4.2 33v-9a.38.38 0 0 1 .38-.37h13.13a.38.38 0 0 1 .38.38v9a.38.38 0 0 1-.37.38zm21.77 32.54a10.41 10.41 0 0 1-20.68 0v-.25a.38.38 0 0 1 .33-.41h3.43a.38.38 0 0 1 .37.31v.18a6.27 6.27 0 0 0 12.36 0v-.18a.38.38 0 0 1 .37-.31H26a.38.38 0 0 1 .37.42zm-15-.52a.38.38 0 0 1 .3-.15h8.77a.37.37 0 0 1 .36.48l-.08.28a4.89 4.89 0 0 1-1.75 2.54 4.84 4.84 0 0 1-5.83 0A4.89 4.89 0 0 1 11.34 66l-.08-.28a.37.37 0 0 1 .06-.31zm34.42-5.33a36.84 36.84 0 0 1-2.07 3.5l-.07.1a.37.37 0 0 1-.31.16H1.82a.37.37 0 0 1-.37-.35v-.21a32 32 0 0 1 1.37-10.88 25.82 25.82 0 0 1 10.8-13.67 27.76 27.76 0 0 1 3.66-2 32.73 32.73 0 0 1 4.12-1.55l.16-.07.14-.1.07-.07a.37.37 0 0 1 .27-.11H43.8a.61.61 0 0 1 .22 0A11.28 11.28 0 0 1 48 38a10.48 10.48 0 0 1 2 4.49 17.74 17.74 0 0 1-.07 6.26 34.79 34.79 0 0 1-2.25 7.44c-.68 1.28-1.26 2.6-1.94 3.89zm13.65-.66l-.05.14a.37.37 0 0 1-.35.24H48.09a.37.37 0 0 1-.34-.54l.15-.31.44-.94.41-.93.49-1.18a.37.37 0 0 1 .35-.23h11.2a.38.38 0 0 1 .31.58l-.23.34A14.48 14.48 0 0 0 60 58a14.66 14.66 0 0 0-.66 1.46zm24 5.58a10.41 10.41 0 0 1-20.81 0 .63.63 0 0 1 0-.26 15.33 15.33 0 0 1 2.29-3.03 10.42 10.42 0 0 1 2.66-2l1-.54a.38.38 0 0 1 .46.58l-.76.88a6.28 6.28 0 1 0 9.77.36l-.66-.98a.38.38 0 0 1 .5-.54l1 .6a12.88 12.88 0 0 1 2.42 2 16.48 16.48 0 0 1 2.08 2.63.63.63 0 0 1 .1.27zm-13.83-3.74a4.84 4.84 0 1 1-1.42 3.43 4.82 4.82 0 0 1 1.42-3.43zm16.49 2.6a.37.37 0 0 1-.28.12h-1a.37.37 0 0 1-.31-.17l-.07-.1a15.52 15.52 0 0 0-5.08-5A12.32 12.32 0 0 0 73 57a12.58 12.58 0 0 0-7.43 2.18 14.08 14.08 0 0 0-3.94 4.48l-.06.11a.37.37 0 0 1-.32.19h-1a.38.38 0 0 1-.37-.41v-.24a13.2 13.2 0 0 1 26.25 0v.24a.37.37 0 0 1-.05.3z"></path>
+            </g>
+        </svg>
+    </section>
+
+    <section class="section-aboutUs bg_dark text-white" id="section-aboutUs">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="offset-md-2 col-md-10">
+                    <div class="section_title text-white my-3">Дополнительное оборудование:</div>
+                </div>
+                <div class="col-1 offset-md-1">
+                    <div class="single-aboutUs__prev d-flex align-items-center justify-content-center h-100">
+                        <i class="fa fa-4x fa-angle-double-left" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-8 col-10">
+
+                    <div class="single-aboutUs py-3">
+                        <div class="text-center border-radius-30 border-secondary border p-3 mx-2">
+                            <img src="./public/assets/img/dop/bgdop-1.jpg" class="mw-100 mx-auto mb-3 border-radius-30">
+                            <div class="text-size-2">Маска сварщика без регулировок WH 1000</div>
+                            <div>
+                                <span class="text_yellow text-size-5 font-weight-bold">78 руб</span>
+                                <del class="text-muted text-size-2">98 руб</del>
+                            </div>
+                        </div>
+                        <div class="text-center border-radius-30 border-secondary border p-3 mx-2">
+                            <img src="./public/assets/img/dop/bgdop-2.jpg" class="mw-100 mx-auto mb-3 border-radius-30">
+                            <div class="text-size-2">Маска сварщика с регулировками WH 4000</div>
+                            <div>
+                                <span class="text_yellow text-size-5 font-weight-bold">89 руб</span>
+                                <del class="text-muted text-size-2">119 руб</del>
+                            </div>
+                        </div>
+                        <div class="text-center border-radius-30 border-secondary border p-3 mx-2">
+                            <img src="./public/assets/img/dop/bgdop-3.jpg" class="mw-100 mx-auto mb-3 border-radius-30">
+                            <div class="text-size-2"> Краги для сварочников </div>
+                            <div>
+                                <span class="text_yellow text-size-5 font-weight-bold">19 руб</span>
+                                <del class="text-muted text-size-2">39 руб</del>
+                            </div>
+                        </div>
+                        <div class="text-center border-radius-30 border-secondary border p-3 mx-2">
+                            <img src="./public/assets/img/dop/bgdop-4.jpg" class="mw-100 mx-auto mb-3 border-radius-30">
+                            <div class="text-size-2">Электроды Монолит 1кг, 2мм и 3мм</div>
+                            <div>
+                                <span class="text_yellow text-size-5 font-weight-bold">8 руб</span>
+                                <del class="text-muted text-size-2">17 руб</del>
+                            </div>
+                        </div>
+                        <div class="text-center border-radius-30 border-secondary border p-3 mx-2">
+                            <img src="./public/assets/img/dop/bgdop-5.jpg" class="mw-100 mx-auto mb-3 border-radius-30">
+                            <div class="text-size-2">Проволка флюсовая Gold 1кг, 0,8мм (MIG) </div>
+                            <div>
+                                <span class="text_yellow text-size-5 font-weight-bold">22 руб</span>
+                                <del class="text-muted text-size-2">42 руб</del>
+                            </div>
+                        </div>
+                        <div class="text-center border-radius-30 border-secondary border p-3 mx-2">
+                            <img src="./public/assets/img/dop/bgdop-6.jpg" class="mw-100 mx-auto mb-3 border-radius-30">
+                            <div class="text-size-2">Проволка омедненная Gold 5кг, 0,8мм и 1мм </div>
+                            <div>
+                                <span class="text_yellow text-size-5 font-weight-bold">32 руб</span>
+                                <del class="text-muted text-size-2">52 руб</del>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-1">
+                    <div class="single-aboutUs__next d-flex align-items-center justify-content-center h-100">
+                        <i class="fa fa-4x fa-angle-double-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-10 offset-md-1 my-2 text-size-5 line-height-1">Компания SHTENLI Превосходство - это основа всего, что мы делаем! Компания уходит своими корнями в 80-е года прошлого века. Тогда основными видами деятельности фирмы были инженерные разработки и внедрение новых технологий в производство.
+                </div>
+                <div class="col-md-10 offset-md-1 my-2 text-size-5 line-height-1">SHTENLI сегодня - это компания с широкой сферой деятельности, большим количеством инженерных патентов и функциональной дилерской сетью!</div>
+
+                <div class="col-md-9 text-center mx-3">Сварочные аппораты SHTENLI - надежно, качественно, быстро! </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-reviews py-5 bg_dark text-white" id="section-reviews">
+        <div class="container">
+            <div class="reviews-wrap bg_black py-5">
+                <div class="row">
+                    <div class="col-md-10 offset-md-2 mb-5 text-md-left text-center">
+                        <div class="section_title text-white">Отзывы о нас</div>
+                        <a class="btn text_yellow text-size-5 p-0" data-toggle="modal" data-target="#callback">Оставить свой отзыв</a>
+                    </div>
+                    <div class="col-2">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="single-reviews__prev"><i class="fa fa-4x fa-angle-double-left" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="single-reviews">
+                            <div class="py-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="./public/assets/img/reviews/otz1.jpg">
+                                    <div>
+                                        <div class="text_yellow text-size-7 font-weight-bold">Дмитрий</div>
+                                        <div class="text-dark">строитель</div>
+                                    </div>
+                                </div>
+                                <div class="text-size-5 font-weight-bold">
+                                    Успел взять на скидках . За такую цену хороший аппарат. Идет с хорошим рукавом и кабелями. Есть с чем сравнивать, сварочник на твердую пятерку за свои деньги
+
+                                </div>
+                            </div>
+                            <div class="py-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="./public/assets/img/reviews/otz2.jpg">
+                                    <div>
+                                        <div class="text_yellow text-size-7 font-weight-bold">Михаил</div>
+                                        <div class="text-dark">водитель</div>
+                                    </div>
+                                </div>
+                                <div class="text-size-5 font-weight-bold">
+                                    Брал полу профессиональный аппарат для работы в гараже. Качеством остался доволен, все таки немецкая сборка.
+                                </div>
+                            </div>
+                            <div class="py-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="./public/assets/img/reviews/otz3.jpg">
+                                    <div>
+                                        <div class="text_yellow text-size-7 font-weight-bold">Татьяна</div>
+                                        <div class="text-dark">бухгалтер</div>
+                                    </div>
+                                </div>
+                                <div class="text-size-5 font-weight-bold">
+                                    Заказывала мужу в подарок. . Менеджер все понятно объяснил и помог выбрать подходящий вариант. Доставили в удобное время. В общем осталась довольна
+                                </div>
+                            </div>
+                            <div class="py-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="./public/assets/img/reviews/otz4.jpg">
+                                    <div>
+                                        <div class="text_yellow text-size-7 font-weight-bold">Виктор</div>
+                                        <div class="text-dark">прораб</div>
+                                    </div>
+                                </div>
+                                <div class="text-size-5 font-weight-bold">
+                                    Порадовало качество сборки, корпус не скрипит, не люфтит, не дребезжит. Сварил полку для гаража, и очень понравилось как он работает, ровный шов, проволока подается плавно. Ни разу не жалею о покупке.
+                                </div>
+                            </div>
+                            <div class="py-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="./public/assets/img/reviews/otz5.jpg">
+                                    <div>
+                                        <div class="text_yellow text-size-7 font-weight-bold">Владимир</div>
+                                        <div class="text-dark">автомеханик</div>
+                                    </div>
+                                </div>
+                                <div class="text-size-5 font-weight-bold">
+                                    В активном пользовании с июня 2020. Что понравилось: -проволокой 0.8 переваривает как автомобиль (даже если металл подустал), так и металл 4 мм (металл толщиной более 4 мм пока не варил) -электрод 4 мм тянет тоже без вопросов (тройку, естественно, тоже)
+                                    -еврорукав очень удобный, гибкий и длинный -компактный, удобно переносить с места на место, -стабильно работает в сети с пониженным напряжением, не просаживает сеть
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="single-reviews__next"><i class="fa fa-4x fa-angle-double-right" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-promotions py-sm-5 py-4 text-white" id="section-promotions">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-10 offset-md-2 my-3">
+                    <div class="section_title font-weight-bold my-3">Видео и фото</div>
+                    <div class="my-3 font-weight-light">Наглядный пример <br> работы сварочного аппората</div>
+                </div>
+                <div class="col-md-5 offset-md-2 col-sm-6">
+                    <a data-fancybox="" class="v-item my-3">
+                        <iframe width="600" height="400" src="https://www.youtube.com/embed/9XvqAVtXnYQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <span class="v-icon"></span>
+                    </a>
+                    <a data-fancybox="" class="v-item my-3">
+                        <iframe width="600" height="400" src="https://www.youtube.com/embed/LsM2oRHWATo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <span class="v-icon"></span>
+                    </a>
+                </div>
+
+                <div class="col-md-5 col-sm-6">
+                    <a href="#modal-news1" data-toggle="modal" class="v-item my-3">
+                        <span class="v-ttl">Не много о Хот-догах</span>
+                        <img src="./public/assets/img/video/dlya-insty-600x600.jpg" class="img-fluid">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contact py-5 text-white" id="section-contact">
+        <div class="container">
+            <div class="contact-wrap bg_black">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-10 my-md-5">
+                        <div class="my-3 section_title">Контакты</div>
+                        <div class="my-3 text-size-5 font-weight-light">По вопросам звоните в любое время <br> с 09.00 до 22.00</div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="contact-map">
+                            <img src="./public/assets/img/back/gallery-1.jpg" class="mw-100">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <a class="text-size-7 text_yellow d-block" href="tel:+375296228600">
+                            <span>+375(29) 5330486</span>
+                            <svg viewBox="0 0 51.15 56.03">
+                                <path d="M48.66 33.81c-1 3.76-5.84 8.44-9.72 9.31a71.3 71.3 0 0 1-15.32 1.24.36.36 0 0 0-.27.11l-9.82 10.08a.59.59 0 0 1-1-.41V43.48a.37.37 0 0 0-.3-.36c-3.88-.86-8.76-5.54-9.72-9.31a51.15 51.15 0 0 1 0-21.94c1-3.76 5.84-8.44 9.72-9.31a71.25 71.25 0 0 1 26.74 0c3.88.86 8.76 5.54 9.72 9.31a51.1 51.1 0 0 1 0 21.94" fill="#511485" fill-rule="evenodd"></path>
+                                <path d="M44 38.62a12 12 0 0 0 3.39-5.09 50.09 50.09 0 0 0 1.16-10.69 50.08 50.08 0 0 0-1.15-10.69A12 12 0 0 0 44 7.06a12.46 12.46 0 0 0-5.3-3.23 70.13 70.13 0 0 0-26.26 0 12.45 12.45 0 0 0-5.29 3.23 12 12 0 0 0-3.4 5.1 49.91 49.91 0 0 0 0 21.37 12 12 0 0 0 3.4 5.09 12.5 12.5 0 0 0 5.27 3.22 1.67 1.67 0 0 1 1.39 1.64v8.94l8.63-8.85a1.66 1.66 0 0 1 .56-.38 1.65 1.65 0 0 1 .66-.12 69.64 69.64 0 0 0 7.54-.2 70.61 70.61 0 0 0 7.51-1A12.46 12.46 0 0 0 44 38.62m5.92-4.49a14.53 14.53 0 0 1-4.12 6.36 15 15 0 0 1-6.57 3.89 73.13 73.13 0 0 1-7.78 1.05 72.07 72.07 0 0 1-7.4.21l-9.54 9.79a1.86 1.86 0 0 1-1.41.57 1.9 1.9 0 0 1-1.31-.53 1.86 1.86 0 0 1-.58-1.36v-10a15.9 15.9 0 0 1-5.86-3.7 14.54 14.54 0 0 1-4.12-6.36 52.4 52.4 0 0 1 0-22.49 14.54 14.54 0 0 1 4.12-6.37 15 15 0 0 1 6.58-3.89 72.36 72.36 0 0 1 27.22 0 15 15 0 0 1 6.65 3.89 14.53 14.53 0 0 1 4.12 6.36 52.67 52.67 0 0 1 1.22 11.25 52.67 52.67 0 0 1-1.22 11.24z" fill="#fff"></path>
+                                <path d="M34 38.74c-.6-.18-1.17-.3-1.69-.52-5.47-2.27-10.51-5.2-14.49-9.69A37.61 37.61 0 0 1 12.28 20c-.71-1.45-1.31-2.95-1.92-4.44s.26-2.77 1.13-3.79a8.92 8.92 0 0 1 3-2.24 1.92 1.92 0 0 1 2.4.57 30.91 30.91 0 0 1 3.71 5.19 2.47 2.47 0 0 1-.69 3.35c-.28.19-.54.41-.8.63a2.61 2.61 0 0 0-.6.63 1.74 1.74 0 0 0-.12 1.53 13.82 13.82 0 0 0 7.76 8.6 4 4 0 0 0 2 .48c1.22-.14 1.61-1.48 2.46-2.17a2.32 2.32 0 0 1 2.79-.12c.9.57 1.77 1.18 2.63 1.79a30.06 30.06 0 0 1 2.48 1.89 2 2 0 0 1 .59 2.43 8.22 8.22 0 0 1-3.53 3.89 8.55 8.55 0 0 1-1.53.49c-.6-.18.52-.16 0 0M25.59 7.68a14.54 14.54 0 0 1 14.29 12c.21 1.21.29 2.44.39 3.66a.86.86 0 0 1-.81 1c-.57 0-.83-.47-.87-1-.07-1-.13-2-.27-3.05A12.79 12.79 0 0 0 28 9.65c-.8-.14-1.62-.18-2.42-.26-.51-.05-1.18-.08-1.29-.72a.87.87 0 0 1 .86-1h.42c7.16.2-.14 0 0 0" fill="#fff" fill-rule="evenodd"></path>
+                                <path d="M36.47 21.78a3.33 3.33 0 0 1-.07.5.81.81 0 0 1-1.53.08 2.17 2.17 0 0 1-.09-.69 8.67 8.67 0 0 0-1.1-4.35 8.09 8.09 0 0 0-3.39-3.18 9.76 9.76 0 0 0-2.71-.83c-.41-.07-.82-.11-1.23-.17a.78.78 0 0 1-.74-.88.77.77 0 0 1 .86-.76 11.25 11.25 0 0 1 4.69 1.22 9.48 9.48 0 0 1 5.16 7.37c0 .15.06.3.07.45 0 .37 0 .74.07 1.24 0 .09 0-.49 0 0" fill="#fff" fill-rule="evenodd"></path>
+                                <path d="M32 21.6a.88.88 0 0 1-1-.87 9 9 0 0 0-.17-1.14 3.22 3.22 0 0 0-1.19-1.86 3.1 3.1 0 0 0-1-.47c-.44-.13-.9-.09-1.33-.2a.82.82 0 0 1-.66-.95.86.86 0 0 1 .91-.69c2.77.2 4.76 1.63 5 4.9a2.26 2.26 0 0 1 0 .69.71.71 0 0 1-.64.58c-.6 0 .27 0 0 0" fill="#fff" fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a class="text-size-7 text_yellow d-block" href="tel:+37544">+375(44) 5330486</a>
+                        <a href="mailto:info@tut.od.ua" class="text-white mt-4 d-block text-size-6"><span>info@tehnosad.by</span></a>
+                        <div class="my-4 d-flex align-items-center">
+                            <svg viewBox="0 0 512 512" fill="#fff" class="m-3">
+                                <path d="M507 1.31a10 10 0 0 0-10 .08L313.66 109.76A10 10 0 1 0 323.83 127l131.49-77.78-244.91 254.12L88.6 266.07l159-94a10 10 0 0 0-10.18-17.22L58.91 260.39a10 10 0 0 0 2.16 18.17l145.47 44.5 64.18 116.81a2.37 2.37 0 0 0 .21.31 10 10 0 0 0 15.55 2l73.79-72.12 138.81 42.47A10 10 0 0 0 512 403V10a10 10 0 0 0-5-8.69zM271.26 329.23a10 10 0 0 0-1.78 5.69v61.18l-43.82-79.76 193.92-201.22zm18.22 82.08v-62.87l49 15zM492 389.48l-196.5-60.11L492 45.7z"></path>
+                                <path d="M164.42 347.58a10 10 0 0 0-14.14 0l-93.35 93.35a10 10 0 0 0 14.14 14.14l93.35-93.35a10 10 0 0 0 0-14.14zM40.07 471.93a10 10 0 0 0-14.14 0l-23 23a10 10 0 1 0 14.14 14.14l23-23a10 10 0 0 0 0-14.14zM142.65 494.34a10 10 0 1 0 2.93 7.07 10.07 10.07 0 0 0-2.93-7.07zM217.05 419.94a10 10 0 0 0-14.14 0l-49.45 49.45a10 10 0 1 0 14.14 14.14l49.45-49.45a10 10 0 0 0 0-14.14zM387.7 416.14a10 10 0 0 0-14.14 0L324 465.72a10 10 0 1 0 14.14 14.14l49.58-49.58a10 10 0 0 0-.02-14.14zM283.5 136.31a10 10 0 1 0 2.93 7.08 10.08 10.08 0 0 0-2.93-7.08z"></path>
+                            </svg>
+                            <div class="w-75">Хотите у нас работать? Хотите с нами сотрудничать? Есть предложения или пожелания?</div>
+                        </div>
+                        <a href="#modal-order" data-toggle="modal" class="btn text-size-7 px-sm-5 font-weight-bold text-uppercase py-sm-3 btn-warning">Напишите нам</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-footer py-5 text-white" id="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 d-lg-block d-none">
+                    <div class="logo d-flex align-items-center">
+                        <img src="./public/assets/img/icons/logo.png" class="img-fluid">
+                        <div class="font-weight-light p-3">
+                            <span>SHTENLI - Немецкие сварочные аппораты</span>
+                            <span>© 2003 - 2020</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 d-flex flex-wrap justify-content-around align-items-center">
+                    <a class="smoothscroll text-white" href="#section-mine">О нас</a>
+                    <a class="smoothscroll text-white" href="#section-catalog">Каталог</a>
+                    <a class="smoothscroll text-white" href="#section-delivery">Доставка и оплата</a>
+                    <a class="smoothscroll text-white" href="#section-reviews">Отзывы</a>
+                    <a class="smoothscroll text-white" href="#section-promotions">Видео и фото</a>
+                    <a class="smoothscroll text-white" href="#section-contact">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- modal -->
+    <div id="modal-order" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center bg-warning">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="my-4">
+                        <p class="h2">Ваш личный менеджер</p>
+                        <p class="h3">Алексей</p>
+                        <p class="h2">(29)5330486, (44)5330486 </p>
+                        <hr>
+                    </div>
+
+                    <form>
+                        <input type="hidden" name="form" value="Окно заказа">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger shadow">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content callback">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center">ОСТАВЬТЕ ОТЗЫВ</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <form>
+                                    <div class="col-12 mt-3">
+                                        <input class="form-control callback__input" type="text" placeholder="Введите имя">
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <input class="form-control callback__input" type="text" placeholder="Введите город">
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <input class="form-control callback__input" type="text" placeholder="Введите номер телефона">
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <div class="fl_upld">
+                                            <label><input id="fl_inp" type="file" name="file">Выберите файл</label>
+                                            <div id="fl_nm">Файл не выбран</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <textarea class="form-control callback__input" cols="30" rows="10" style="resize: none;">                    </textarea>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <button class="callback-modal__btn w-100" type="button">Оставить отзыв</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-news1" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center bg-warning">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="my-4">
+                        <p class="h2">Ваш личный менеджер</p>
+                        <p class="h3">Михаил</p>
+                        <p class="h2">(29) 6228600, (29) </p>
+                        <hr>
+                    </div>
+
+                    <div class="my-3">
+                        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora tenetur officia neque. Beatae tempora quos, cum similique odit laudantium aut nam minus necessitatibus nisi, quam fugiat aperiam, dolor nulla vero!</div>
+                        <hr>
+                    </div>
+
+                    <form>
+                        <input type="hidden" name="form" value="Окно заказа">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger shadow">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-news2" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center bg-warning">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="my-4">
+                        <p class="h2">Ваш личный менеджер</p>
+                        <p class="h3">Михаил</p>
+                        <p class="h2">(29) 5330486, (44) 5330486 </p>
+                        <hr>
+                    </div>
+
+                    <div class="my-3">
+                        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora tenetur officia neque. Beatae tempora quos, cum similique odit laudantium aut nam minus necessitatibus nisi, quam fugiat aperiam, dolor nulla vero!</div>
+                        <hr>
+                    </div>
+
+                    <form>
+                        <input type="hidden" name="form" value="Окно заказа">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger shadow">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-product1" class="modal-product modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl d-flex align-items-center h-100">
+            <div class="modal-content">
+                <div class="modal-body bg_dark text-center p-0">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="single-modal">
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma2001.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma2002.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma2003.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma2004.jpg" class="w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-white">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="p-3 text-size-6" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i> назад</span>
+                            </button>
+                            <form class="h-100 d-flex flex-column justify-content-center text-left">
+                                <input type="hidden" name="form" value="Окно заказа">
+                                <div class="text_yellow section_title line-height-1 my-2">Shtenli MMA 200</div>
+                                <table class="table border-dark table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение:</th>
+                                            <td>220/230 B</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота:</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток:</th>
+                                            <td>24 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки:</th>
+                                            <td>20-250 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диаметр электрода:</th>
+                                            <td>1.6 - 3 мм</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-size-7">179 руб.</div>
+                                <div class="my-2">
+                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="my-2">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="my-2 text-center">
+                                    <button type="submit" class="btn btn-warning shadow">Отправить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-product2" class="modal-product modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl d-flex align-items-center h-100">
+            <div class="modal-content">
+                <div class="modal-body bg_dark text-center p-0">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="single-modal">
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma2501.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma2502.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma2503.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma2504.jpg" class="w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-white">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="p-3 text-size-6" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i> назад</span>
+                            </button>
+                            <form class="h-100 d-flex flex-column justify-content-center text-left">
+                                <input type="hidden" name="form" value="Окно заказа">
+                                <div class="text_yellow section_title line-height-1 my-2">Shtenli MMA 250 Pro</div>
+                                <table class="table border-dark table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение:</th>
+                                            <td>220/230 B</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота:</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток:</th>
+                                            <td>24 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки:</th>
+                                            <td>20-250 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диаметр электрода:</th>
+                                            <td>1.6 - 3 мм</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-size-7">249 руб.</div>
+                                <div class="my-2">
+                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="my-2">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="my-2 text-center">
+                                    <button type="submit" class="btn btn-warning shadow">Отправить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-product3" class="modal-product modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl d-flex align-items-center h-100">
+            <div class="modal-content">
+                <div class="modal-body bg_dark text-center p-0">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="single-modal">
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma2701.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma2702.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma2703.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma2704.jpg" class="w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-white">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="p-3 text-size-6" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i> назад</span>
+                            </button>
+                            <form class="h-100 d-flex flex-column justify-content-center text-left">
+                                <input type="hidden" name="form" value="Окно заказа">
+                                <div class="text_yellow section_title line-height-1 my-2">Shtenli MMA 270 Pro</div>
+                                <table class="table border-dark table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение:</th>
+                                            <td>220/230 B</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота:</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток:</th>
+                                            <td>24 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки:</th>
+                                            <td>20-250 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диаметр электрода:</th>
+                                            <td>1.6 - 3 мм</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-size-7">284 руб.</div>
+                                <div class="my-2">
+                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="my-2">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="my-2 text-center">
+                                    <button type="submit" class="btn btn-warning shadow">Отправить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-product4" class="modal-product modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl d-flex align-items-center h-100">
+            <div class="modal-content">
+                <div class="modal-body bg_dark text-center p-0">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="single-modal">
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma3041.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma3042.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma3043.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mma3044.jpg" class="w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-white">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="p-3 text-size-6" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i> назад</span>
+                            </button>
+                            <form class="h-100 d-flex flex-column justify-content-center text-left">
+                                <input type="hidden" name="form" value="Окно заказа">
+                                <div class="text_yellow section_title line-height-1 my-2">Shtenli MMA 320</div>
+                                <table class="table border-dark table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение:</th>
+                                            <td>220/230 B</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота:</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток:</th>
+                                            <td>24 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки:</th>
+                                            <td>20-250 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диаметр электрода:</th>
+                                            <td>1.6 - 3 мм</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-size-7">354 руб.</div>
+                                <div class="my-2">
+                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="my-2">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="my-2 text-center">
+                                    <button type="submit" class="btn btn-warning shadow">Отправить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-product5" class="modal-product modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl d-flex align-items-center h-100">
+            <div class="modal-content">
+                <div class="modal-body bg_dark text-center p-0">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="single-modal">
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig2201.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig2202.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig2203.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig2204.jpg" class="w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-white">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="p-3 text-size-6" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i> назад</span>
+                            </button>
+                            <form class="h-100 d-flex flex-column justify-content-center text-left">
+                                <input type="hidden" name="form" value="Окно заказа">
+                                <div class="text_yellow section_title line-height-1 my-2">Shtenli MIG 220 Pro</div>
+                                <table class="table border-dark table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение:</th>
+                                            <td>220/230 B</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота:</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток:</th>
+                                            <td>24 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки:</th>
+                                            <td>20-250 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диаметр электрода:</th>
+                                            <td>1.6 - 3 мм</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-size-7">472 руб.</div>
+                                <div class="my-2">
+                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="my-2">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="my-2 text-center">
+                                    <button type="submit" class="btn btn-warning shadow">Отправить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-product6" class="modal-product modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl d-flex align-items-center h-100">
+            <div class="modal-content">
+                <div class="modal-body bg_dark text-center p-0">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="single-modal">
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig220c1.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig220c2.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig220c3.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig220c4.jpg" class="w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-white">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="p-3 text-size-6" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i> назад</span>
+                            </button>
+                            <form class="h-100 d-flex flex-column justify-content-center text-left">
+                                <input type="hidden" name="form" value="Окно заказа">
+                                <div class="text_yellow section_title line-height-1 my-2">Shtenli MIG 220 Pro S</div>
+                                <table class="table border-dark table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение:</th>
+                                            <td>220/230 B</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота:</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток:</th>
+                                            <td>24 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки:</th>
+                                            <td>20-250 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диаметр электрода:</th>
+                                            <td>1.6 - 3 мм</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-size-7">549 руб.</div>
+                                <div class="my-2">
+                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="my-2">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="my-2 text-center">
+                                    <button type="submit" class="btn btn-warning shadow">Отправить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-product7" class="modal-product modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl d-flex align-items-center h-100">
+            <div class="modal-content">
+                <div class="modal-body bg_dark text-center p-0">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="single-modal">
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig250c1.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig250c2.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig250c3.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig250c4.jpg" class="w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-white">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="p-3 text-size-6" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i> назад</span>
+                            </button>
+                            <form class="h-100 d-flex flex-column justify-content-center text-left">
+                                <input type="hidden" name="form" value="Окно заказа">
+                                <div class="text_yellow section_title line-height-1 my-2">Shtenli MIG 250 Pro</div>
+                                <table class="table border-dark table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение:</th>
+                                            <td>220/230 B</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота:</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток:</th>
+                                            <td>24 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки:</th>
+                                            <td>20-250 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диаметр электрода:</th>
+                                            <td>1.6 - 3 мм</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-size-7">506 руб.</div>
+                                <div class="my-2">
+                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="my-2">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="my-2 text-center">
+                                    <button type="submit" class="btn btn-warning shadow">Отправить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-product8" class="modal-product modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl d-flex align-items-center h-100">
+            <div class="modal-content">
+                <div class="modal-body bg_dark text-center p-0">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="single-modal">
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig250c1.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig250c2.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig250c3.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/mig250c4.jpg" class="w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-white">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="p-3 text-size-6" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i> назад</span>
+                            </button>
+                            <form class="h-100 d-flex flex-column justify-content-center text-left">
+                                <input type="hidden" name="form" value="Окно заказа">
+                                <div class="text_yellow section_title line-height-1 my-2">Shtenli MIG 250 Pro S</div>
+                                <table class="table border-dark table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение:</th>
+                                            <td>220/230 B</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота:</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток:</th>
+                                            <td>24 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки:</th>
+                                            <td>20-250 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диаметр электрода:</th>
+                                            <td>1.6 - 3 мм</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-size-7">562 руб.</div>
+                                <div class="my-2">
+                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="my-2">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="my-2 text-center">
+                                    <button type="submit" class="btn btn-warning shadow">Отправить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-product9" class="modal-product modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl d-flex align-items-center h-100">
+            <div class="modal-content">
+                <div class="modal-body bg_dark text-center p-0">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="single-modal">
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma2201.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma2202.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma2203.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma2204.jpg" class="w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-white">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="p-3 text-size-6" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i> назад</span>
+                            </button>
+                            <form class="h-100 d-flex flex-column justify-content-center text-left">
+                                <input type="hidden" name="form" value="Окно заказа">
+                                <div class="text_yellow section_title line-height-1 my-2">Shtenli MIG/MMA 220 Pro </div>
+                                <table class="table border-dark table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение:</th>
+                                            <td>220/230 B</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота:</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток:</th>
+                                            <td>24 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки:</th>
+                                            <td>20-250 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диаметр электрода:</th>
+                                            <td>1.6 - 3 мм</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-size-7">486 руб.</div>
+                                <div class="my-2">
+                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="my-2">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="my-2 text-center">
+                                    <button type="submit" class="btn btn-warning shadow">Отправить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-product10" class="modal-product modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl d-flex align-items-center h-100">
+            <div class="modal-content">
+                <div class="modal-body bg_dark text-center p-0">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="single-modal">
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma220c1.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma220c2.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma220c3.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma220c4.jpg" class="w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-white">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="p-3 text-size-6" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i> назад</span>
+                            </button>
+                            <form class="h-100 d-flex flex-column justify-content-center text-left">
+                                <input type="hidden" name="form" value="Окно заказа">
+                                <div class="text_yellow section_title line-height-1 my-2">Shtenli MIG/MMA 220 Pro S</div>
+                                <table class="table border-dark table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение:</th>
+                                            <td>220/230 B</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота:</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток:</th>
+                                            <td>24 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки:</th>
+                                            <td>20-250 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диаметр электрода:</th>
+                                            <td>1.6 - 3 мм</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-size-7">605 руб.</div>
+                                <div class="my-2">
+                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="my-2">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="my-2 text-center">
+                                    <button type="submit" class="btn btn-warning shadow">Отправить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-product11" class="modal-product modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl d-flex align-items-center h-100">
+            <div class="modal-content">
+                <div class="modal-body bg_dark text-center p-0">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="single-modal">
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma2201.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma2202.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma2203.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma2204.jpg" class="w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-white">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="p-3 text-size-6" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i> назад</span>
+                            </button>
+                            <form class="h-100 d-flex flex-column justify-content-center text-left">
+                                <input type="hidden" name="form" value="Окно заказа">
+                                <div class="text_yellow section_title line-height-1 my-2">Shtenli MIG/MMA 250 Pro </div>
+                                <table class="table border-dark table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение:</th>
+                                            <td>220/230 B</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота:</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток:</th>
+                                            <td>24 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки:</th>
+                                            <td>20-250 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диаметр электрода:</th>
+                                            <td>1.6 - 3 мм</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-size-7">501 руб.</div>
+                                <div class="my-2">
+                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="my-2">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="my-2 text-center">
+                                    <button type="submit" class="btn btn-warning shadow">Отправить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-product12" class="modal-product modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl d-flex align-items-center h-100">
+            <div class="modal-content">
+                <div class="modal-body bg_dark text-center p-0">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="single-modal">
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma220c1.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma220c2.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma220c3.jpg" class="w-100 img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./public/assets/img/catalog/migmma220c4.jpg" class="w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-white">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="p-3 text-size-6" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i> назад</span>
+                            </button>
+                            <form class="h-100 d-flex flex-column justify-content-center text-left">
+                                <input type="hidden" name="form" value="Окно заказа">
+                                <div class="text_yellow section_title line-height-1 my-2">Shtenli MIG 250 Pro S</div>
+                                <table class="table border-dark table-sm table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Напряжение:</th>
+                                            <td>220/230 B</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Частота:</th>
+                                            <td>50/60 Гц</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Номинальный входной ток:</th>
+                                            <td>24 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диапазон регулировки:</th>
+                                            <td>20-250 A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Диаметр электрода:</th>
+                                            <td>1.6 - 3 мм</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-size-7">633 руб.</div>
+                                <div class="my-2">
+                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="my-2">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+                                </div>
+                                <div class="my-2 text-center">
+                                    <button type="submit" class="btn btn-warning shadow">Отправить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    <!-- slick-carousel -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./dist/scripts/js.min.js"></script>
+    <script src="../vendor/js/app.js"></script>
+</body>
+
+</html>
